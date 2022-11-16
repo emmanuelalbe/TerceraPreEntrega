@@ -1,0 +1,148 @@
+@media (min-width:320px) and (max-width:600px){
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/*Contenedor de H1 Y P de inicio - Modificaciones de h1 y p*/
+.seccionInicio{
+   @include tituloParrafo; 
+}
+
+.contenedorGridInicio .seccionInicio h1{
+    @include titulosCelular;
+}
+
+.contenedorGridInicio .seccionInicio p{
+   @include parrafosCelular;
+}
+
+.contenedorGridInicio .seccionInicio p::first-letter{
+    font-size: large;
+}
+/* Finaliza el Contenedor  de h1 y p*/
+
+.seccionImagenInicio .carrusel{
+    width: 95%;
+    margin:auto;
+    overflow:hidden;
+}
+.carrusel ul {
+    @include ulCarrusel;
+}
+.carrusel li{ 
+     @include liCarrusel;
+}
+
+.carrusel li img{ width: 25rem; margin-bottom: 4rem;}
+
+@keyframes cambio {
+    30% {margin-left: 0;}
+    50% {margin-left: 0;}
+
+    50% {margin-left: -100%;} 
+    100% {margin-left: -100%}
+}
+/* Finaliza el Contenedor de Imagenes*/
+
+}
+
+@media (min-width:601px) and (max-width:900px){
+ * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    
+html {
+        font-size: 62.5%;
+    }
+    
+    /*Contenedor de H1 Y P de inicio - Modificaciones de h1 y p*/
+ .seccionInicio{
+       @include tituloParrafo; 
+    }
+    
+.contenedorGridInicio .seccionInicio h1{
+        @include tituloTablet;
+    }
+    
+    .contenedorGridInicio .seccionInicio p{
+       @include parrafoTablet;
+    }
+    
+    .contenedorGridInicio .seccionInicio p::first-letter{
+        font-size:3rem;
+    }
+    /* Finaliza el Contenedor  de h1 y p*/
+    
+.seccionImagenInicio .carrusel{
+        width: 95%;
+        margin:auto;
+        overflow:hidden;
+    }
+.carrusel ul {
+       @include ulCarrusel;
+    }
+
+.carrusel li{ 
+        @include liCarrusel
+    }
+    
+    .carrusel li img{ width:30rem;}
+    
+    @keyframes cambio {
+        30% {margin-left: 0;}
+        50% {margin-left: 0;}
+    
+        50% {margin-left: -100%;} 
+        100% {margin-left: -100%}
+    }
+    .carrusel li img{ width:40rem;}
+    /* Finaliza el Contenedor de Imagenes*/
+    
+}
+
+@media (min-width:901px){
+
+.seccionInicio{
+    @include tituloParrafo;
+}
+
+.contenedorGridInicio .seccionInicio h1{
+    @include tituloPc;
+}
+.contenedorGridInicio .seccionInicio p{
+    @include parrafoPc;
+}
+/* Finaliza el Contenedor  de h1 y p*/
+
+/*Contenedor de imagenes *keyframes*/
+
+.seccionImagenInicio .carrusel{
+    width: 95%;
+    margin:auto;
+    overflow:hidden;
+}
+.carrusel ul {
+  @include ulCarrusel;
+}
+.carrusel li{ 
+    @include liCarrusel;
+}
+
+.carrusel li img{ width:40rem;}
+
+@keyframes cambio {
+    20% {margin-left: 0;}
+    50% {margin-left: 0;}
+
+    50% {margin-left: -100%;} 
+    100% {margin-left: -100%}
+}
+}

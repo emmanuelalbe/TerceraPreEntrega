@@ -1,0 +1,1100 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap");
+/* Comienza Media para NavBar en Celular*/
+@media (min-width: 320px) and (max-width: 600px) {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  .color {
+    background: linear-gradient(10deg, rgb(255, 255, 255) 20%, rgba(239, 243, 6, 0.689) 20% 40%, rgba(27, 160, 4, 0.728) 40% 60%, rgba(6, 37, 129, 0.769) 60% 80%, rgba(255, 0, 0, 0.749) 80%, black);
+  }
+  .nav-link {
+    margin-top: 1.7rem;
+    margin-bottom: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: rgb(7, 7, 7);
+  }
+  .nav-link:hover {
+    font-size: 1.2rem;
+    color: rgb(69, 69, 235);
+  }
+}
+footer {
+  width: 100%;
+}
+footer nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer nav ul li {
+  margin-right: 1rem;
+  list-style: none;
+}
+footer nav ul li a figure {
+  text-align: center;
+}
+footer nav ul li a figure img {
+  width: 4.5rem;
+}
+
+/* Finaliza  Media para NavBar en Celular */
+/* Comienza Media para NavBar en Tablet*/
+@media (min-width: 601px) and (max-width: 900px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  /*Estilo propio NavBar*/
+  .navbar {
+    background: linear-gradient(10deg, rgb(255, 255, 255) 20%, rgba(239, 243, 6, 0.689) 20% 40%, rgba(27, 160, 4, 0.728) 40% 60%, rgba(6, 37, 129, 0.769) 60% 80%, rgba(255, 0, 0, 0.749) 80%, black);
+  }
+  .navbar .nav-link {
+    margin-top: 1.7rem;
+    margin-bottom: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    color: rgb(7, 7, 7);
+  }
+  .navbar .nav-link:hover {
+    font-size: 2rem;
+    color: rgb(84, 84, 246);
+  }
+}
+footer {
+  width: 100%;
+}
+footer nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer nav ul li {
+  list-style: none;
+}
+footer nav ul li a figure {
+  text-align: center;
+}
+footer nav ul li a figure img {
+  width: 5rem;
+}
+
+/* Finaliza  Media para NavBar en Tablet*/
+@media (min-width: 901px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  /*Estilo propio NavBar*/
+  .navbar {
+    background: black;
+  }
+  .navbar .nav-link {
+    margin-top: 1.7rem;
+    margin-bottom: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    margin-left: 6rem;
+    font-size: 2rem;
+    color: white;
+    transition: all 700ms;
+  }
+  .navbar .nav-link:hover {
+    font-size: 2.3rem;
+    color: rgb(54, 54, 176);
+  }
+  /* Tengo un inconveniente con el footer, porque le pongo un fondo de color pero me deja un margen-bottom en blanco y no se cual es el error*/
+  footer {
+    width: 100%;
+  }
+  footer nav {
+    margin-top: 7rem;
+  }
+  footer nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  footer nav ul li {
+    list-style: none;
+  }
+  footer nav ul li a figure {
+    text-align: center;
+  }
+  footer nav ul li a figure img {
+    width: 6rem;
+  }
+}
+form {
+  margin: 6rem;
+}
+form button {
+  width: 12rem;
+  margin-top: 3rem;
+  font-size: 1rem;
+  color: greenyellow;
+  font-family: "Roboto", sans-serif;
+  background-color: black;
+}
+form buttonhover {
+  width: 6rem;
+  color: white;
+}
+
+@media (min-width: 320px) and (max-width: 600px) {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  /*Contenedor de H1 Y P de inicio - Modificaciones de h1 y p*/
+  .seccionInicio {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contenedorGridInicio .seccionInicio h1 {
+    font: 1.8rem "Roboto", sans-serif;
+    margin-bottom: 2.6rem;
+    text-transform: uppercase;
+  }
+  .contenedorGridInicio .seccionInicio p {
+    text-align: center;
+    font: 1.4rem "Roboto", sans-serif;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  .contenedorGridInicio .seccionInicio p::first-letter {
+    font-size: large;
+  }
+  /* Finaliza el Contenedor  de h1 y p*/
+  .seccionImagenInicio .carrusel {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .carrusel ul {
+    text-align: center;
+    padding: 0;
+    display: flex;
+    width: 200%;
+    animation: cambio 15s infinite;
+    justify-content: center;
+    align-items: center;
+  }
+  .carrusel li {
+    width: 100%;
+    list-style: none;
+  }
+  .carrusel li img {
+    width: 25rem;
+    margin-bottom: 4rem;
+  }
+  @keyframes cambio {
+    30% {
+      margin-left: 0;
+    }
+    50% {
+      margin-left: 0;
+    }
+    50% {
+      margin-left: -100%;
+    }
+    100% {
+      margin-left: -100%;
+    }
+  }
+  /* Finaliza el Contenedor de Imagenes*/
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  /*Contenedor de H1 Y P de inicio - Modificaciones de h1 y p*/
+  .seccionInicio {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contenedorGridInicio .seccionInicio h1 {
+    font: 2.5rem "Roboto", sans-serif;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+  .contenedorGridInicio .seccionInicio p {
+    text-align: center;
+    font: 2rem "Roboto", sans-serif;
+    line-height: 3.3rem;
+  }
+  .contenedorGridInicio .seccionInicio p::first-letter {
+    font-size: 3rem;
+  }
+  /* Finaliza el Contenedor  de h1 y p*/
+  .seccionImagenInicio .carrusel {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .carrusel ul {
+    text-align: center;
+    padding: 0;
+    display: flex;
+    width: 200%;
+    animation: cambio 15s infinite;
+    justify-content: center;
+    align-items: center;
+  }
+  .carrusel li {
+    width: 100%;
+    list-style: none;
+  }
+  .carrusel li img {
+    width: 30rem;
+  }
+  @keyframes cambio {
+    30% {
+      margin-left: 0;
+    }
+    50% {
+      margin-left: 0;
+    }
+    50% {
+      margin-left: -100%;
+    }
+    100% {
+      margin-left: -100%;
+    }
+  }
+  .carrusel li img {
+    width: 40rem;
+  }
+  /* Finaliza el Contenedor de Imagenes*/
+}
+@media (min-width: 901px) {
+  .seccionInicio {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contenedorGridInicio .seccionInicio h1 {
+    font: 3rem "Roboto", sans-serif;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+  }
+  .contenedorGridInicio .seccionInicio p {
+    text-align: center;
+    font: 2.5rem "Roboto", sans-serif;
+    line-height: 4rem;
+  }
+  /* Finaliza el Contenedor  de h1 y p*/
+  /*Contenedor de imagenes *keyframes*/
+  .seccionImagenInicio .carrusel {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .carrusel ul {
+    text-align: center;
+    padding: 0;
+    display: flex;
+    width: 200%;
+    animation: cambio 15s infinite;
+    justify-content: center;
+    align-items: center;
+  }
+  .carrusel li {
+    width: 100%;
+    list-style: none;
+  }
+  .carrusel li img {
+    width: 40rem;
+  }
+  @keyframes cambio {
+    20% {
+      margin-left: 0;
+    }
+    50% {
+      margin-left: 0;
+    }
+    50% {
+      margin-left: -100%;
+    }
+    100% {
+      margin-left: -100%;
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 600px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  .seccionInstructor {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .seccionInstructor h2 {
+    font: 1.8rem "Roboto", sans-serif;
+    margin-bottom: 2.6rem;
+    text-transform: uppercase;
+  }
+  .seccionInstructor p {
+    text-align: center;
+    font: 1.4rem "Roboto", sans-serif;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  /*DISEÑO DE LAS TARJETAS CONTENEDORAS DE INSTRUCTOR */
+  .contenedorGridInstructor .curriculumInstructor .tarjeta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 0.2rem solid rgb(45, 100, 218);
+    border-radius: 1rem;
+    text-align: center;
+    margin: 5rem;
+    transition: all 550ms;
+  }
+  .contenedorGridInstructor .curriculumInstructor .tarjeta:hover {
+    border: 0.1rem solid rgb(14, 14, 14);
+    box-shadow: 0.3rem 0.3rem 1rem 0.3rem rgba(56, 137, 212, 0.991);
+  }
+  .contenedorGridInstructor .curriculumInstructor div li {
+    width: 100%;
+    list-style: none;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font: 1.4rem "Roboto", sans-serif;
+    text-transform: uppercase;
+  }
+  .contenedorGridInstructor .curriculumInstructor div li:hover {
+    font: 1.7rem "Roboto", sans-serif;
+  }
+  .contenedorGridInstructor .curriculumInstructor div img {
+    margin-top: 1rem;
+    width: 90%;
+    border: 0.1rem solid rgb(2, 0, 142);
+    border-radius: 1rem;
+    box-shadow: 0.3rem 0.2rem 1rem 0.6rem black;
+  }
+}
+/*Finaliza Instructor*/
+@media (min-width: 601px) and (max-width: 900px) {
+  .contenedorGridInstructor {
+    margin: 4rem;
+  }
+  /*Instroduccion de Instructor*/
+  .seccionInstructor {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .seccionInstructor h2 {
+    font: 2.5rem "Roboto", sans-serif;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+  .seccionInstructor p {
+    text-align: center;
+    font: 2rem "Roboto", sans-serif;
+    line-height: 3.3rem;
+  }
+  /*DISEÑO DE LAS TARJETAS CONTENEDORAS DE INSTRUCTOR */
+  /*Grid CurriculumInstructor*/
+  .contenedorGridInstructor .curriculumInstructor {
+    display: grid;
+    grid-template-areas: "competidorDos instructor" "capacitacion capacitacion ";
+    grid-gap: 2rem;
+    grid-row: 3rem;
+  }
+  .contenedorGridInstructor .curriculumInstructor .capacitacion {
+    grid-area: capacitacion;
+  }
+  .contenedorGridInstructor .curriculumInstructor .instructor {
+    grid-area: instructor;
+  }
+  .contenedorGridInstructor .curriculumInstructor .competidorDos {
+    grid-area: competidorDos;
+  }
+  .contenedorGridInstructor .curriculumInstructor .tarjeta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 0.4rem black solid;
+    border-radius: 3rem;
+  }
+  .contenedorGridInstructor .curriculumInstructor .tarjeta:hover {
+    border: 0.5rem solid rgb(14, 14, 14);
+    box-shadow: 0.3rem 0.3rem 1rem 0.3rem rgba(56, 137, 212, 0.991);
+  }
+  .contenedorGridInstructor .curriculumInstructor div li {
+    list-style: none;
+    margin-bottom: 2rem;
+    font: 1.6rem "Roboto", sans-serif;
+    text-transform: uppercase;
+  }
+  .contenedorGridInstructor .curriculumInstructor div li:hover {
+    font: 2rem "Roboto", sans-serif;
+  }
+  .contenedorGridInstructor .curriculumInstructor div figure {
+    width: 100%;
+    padding: 1rem;
+  }
+  .contenedorGridInstructor .curriculumInstructor div img {
+    width: 100%;
+    border-radius: 1rem;
+    border: 0.4rem black;
+  }
+}
+@media (min-width: 901px) {
+  .contenedorGridInstructor {
+    margin: 4rem;
+  }
+  /*Instroduccion de Instructor*/
+  .seccionInstructor {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .seccionInstructor h2 {
+    font: 3rem "Roboto", sans-serif;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+  }
+  .seccionInstructor p {
+    text-align: center;
+    font: 2.5rem "Roboto", sans-serif;
+    line-height: 4rem;
+  }
+  /*DISEÑO DE LAS TARJETAS CONTENEDORAS DE INSTRUCTOR */
+  /*Grid CurriculumInstructor*/
+  .contenedorGridInstructor .curriculumInstructor {
+    display: grid;
+    grid-template-areas: "capacitacion competidorDos instructor";
+    grid-gap: 2rem;
+    grid-row: 3rem;
+  }
+  .contenedorGridInstructor .curriculumInstructor .capacitacion {
+    grid-area: capacitacion;
+  }
+  .contenedorGridInstructor .curriculumInstructor .instructor {
+    grid-area: instructor;
+  }
+  .contenedorGridInstructor .curriculumInstructor .competidorDos {
+    grid-area: competidorDos;
+  }
+  .contenedorGridInstructor .curriculumInstructor .tarjeta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 0.4rem black solid;
+    border-radius: 3rem;
+    transition: all 550ms;
+  }
+  .contenedorGridInstructor .curriculumInstructor .tarjeta:hover {
+    border: 0.5rem solid rgb(14, 14, 14);
+    box-shadow: 0.3rem 0.3rem 1rem 0.3rem rgba(56, 137, 212, 0.991);
+  }
+  .contenedorGridInstructor .curriculumInstructor div li {
+    list-style: none;
+    margin-bottom: 2rem;
+    font: 1.6rem "Roboto", sans-serif;
+    transition: all 550ms;
+  }
+  .contenedorGridInstructor .curriculumInstructor div li:hover {
+    font: 2rem "Roboto", sans-serif;
+  }
+  .contenedorGridInstructor .curriculumInstructor div figure {
+    width: 100%;
+    padding: 1rem;
+  }
+  .contenedorGridInstructor .curriculumInstructor div img {
+    width: 100%;
+    border-radius: 1rem;
+    border: 0.4rem black;
+  }
+}
+@media (min-width: 320px) and (max-width: 600px) {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  .contenedorGridEventos .seccionEventos {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contenedorGridEventos .seccionEventos h3 {
+    font: 1.8rem "Roboto", sans-serif;
+    margin-bottom: 2.6rem;
+    text-transform: uppercase;
+  }
+  .contenedorGridEventos .seccionEventos p {
+    text-align: center;
+    font: 1.4rem "Roboto", sans-serif;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  /*Contenedor de imagenes *keyframes* HTML EVENTOS*/
+  .seccionImagenEventos .carruselEventos {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .carruselEventos ul {
+    text-align: center;
+    padding: 0;
+    display: flex;
+    width: 400%;
+    animation: cambiodos 20s infinite;
+    justify-content: center;
+  }
+  .carruselEventos li {
+    width: 100%;
+    list-style: none;
+  }
+  .carruselEventos li:last-child img {
+    width: 30rem;
+  }
+  .carruselEventos li img {
+    width: 16rem;
+    border-radius: 2rem;
+  }
+  @keyframes cambiodos {
+    20% {
+      margin-left: 0;
+    }
+    40% {
+      margin-left: 0;
+    }
+    45% {
+      margin-left: -100%;
+    }
+    60% {
+      margin-left: -100%;
+    }
+    65% {
+      margin-left: -200%;
+    }
+    80% {
+      margin-left: -200%;
+    }
+    85% {
+      margin-left: -300%;
+    }
+    100% {
+      margin-left: -300%;
+    }
+  }
+  /*Contenedor (IMAGENES Y PARRAFOS) de las Cards del html EVENTOS*/
+  .gridCardEventos {
+    margin: 2rem 2rem;
+    border: 0.12 solid rgb(236, 8, 8);
+    border-radius: 0.8rem;
+    display: grid;
+    grid-template-areas: "imagen titulo" "imagen parrafo";
+  }
+  .gridCardEventos .imagenCardEventos {
+    grid-area: imagen;
+  }
+  .gridCardEventos .imagenCardEventos figure {
+    width: 12rem;
+    margin-top: 2rem;
+    padding: 1rem;
+  }
+  .gridCardEventos .imagenCardEventos figure img {
+    width: 100%;
+    border-radius: 0.8rem;
+    box-shadow: 0.2rem 0.4rem 0.4rem 0.5rem black;
+    transition: all 550ms;
+  }
+  .gridCardEventos .imagenCardEventos figure img:hover {
+    border: 0.1rem solid rgb(14, 14, 14);
+    box-shadow: 0.3rem 0.3rem 1rem 0.3rem rgba(56, 137, 212, 0.991);
+  }
+  .gridCardEventos .tituloCardEventos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: titulo;
+  }
+  .gridCardEventos .tituloCardEventos h2 {
+    font: 1.2rem "Roboto", sans-serif;
+    margin-top: 1rem;
+    color: black;
+  }
+  .gridCardEventos .parrafoCardEventos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    grid-area: parrafo;
+    padding: 0.5rem;
+  }
+  .gridCardEventos .parrafoCardEventos p {
+    text-align: center;
+    font: 1rem "Roboto", sans-serif;
+    line-height: 1.8rem;
+    color: black;
+  }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  .contenedorGridEventos .seccionEventos {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contenedorGridEventos .seccionEventos h3 {
+    font: 2.5rem "Roboto", sans-serif;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+  .contenedorGridEventos .seccionEventos p {
+    text-align: center;
+    font: 2rem "Roboto", sans-serif;
+    line-height: 3.3rem;
+  }
+  /*Contenedor de imagenes *keyframes* HTML EVENTOS*/
+  .seccionImagenEventos .carruselEventos {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .carruselEventos ul {
+    text-align: center;
+    padding: 0;
+    display: flex;
+    width: 400%;
+    animation: cambio 20s infinite;
+    justify-content: center;
+  }
+  .carruselEventos li {
+    width: 100%;
+    list-style: none;
+  }
+  .carruselEventos li:last-child img {
+    width: 40rem;
+  }
+  .carruselEventos li img {
+    width: 30rem;
+    border-radius: 2rem;
+  }
+  @keyframes cambio {
+    20% {
+      margin-left: 0;
+    }
+    40% {
+      margin-left: 0;
+    }
+    45% {
+      margin-left: -100%;
+    }
+    60% {
+      margin-left: -100%;
+    }
+    65% {
+      margin-left: -200%;
+    }
+    80% {
+      margin-left: -200%;
+    }
+    85% {
+      margin-left: -300%;
+    }
+    100% {
+      margin-left: -300%;
+    }
+  }
+  /*Contenedor (IMAGENES Y PARRAFOS) de las Cards del html EVENTOS*/
+  .gridCardEventos {
+    margin: 2rem 2rem;
+    border: 0.12 solid rgb(236, 8, 8);
+    border-radius: 0.8rem;
+    display: grid;
+    grid-template-areas: "imagen titulo" "imagen parrafo";
+    grid-gap: 2rem;
+  }
+  .gridCardEventos .imagenCardEventos {
+    grid-area: imagen;
+  }
+  .gridCardEventos .imagenCardEventos figure {
+    width: 20rem;
+    margin-top: 2rem;
+    padding: 1rem;
+  }
+  .gridCardEventos .imagenCardEventos figure img {
+    width: 100%;
+    border-radius: 0.8rem;
+    box-shadow: 0.2rem 0.4rem 0.4rem 0.5rem black;
+    transition: all 550ms;
+  }
+  .gridCardEventos .imagenCardEventos figure img:hover {
+    border: 0.1rem solid rgb(14, 14, 14);
+    box-shadow: 0.3rem 0.3rem 1rem 0.3rem rgba(56, 137, 212, 0.991);
+  }
+  .gridCardEventos .tituloCardEventos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: titulo;
+  }
+  .gridCardEventos .tituloCardEventos h2 {
+    font: 2.3rem "Roboto", sans-serif;
+    color: black;
+  }
+  .gridCardEventos .parrafoCardEventos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    grid-area: parrafo;
+  }
+  .gridCardEventos .parrafoCardEventos p {
+    text-align: center;
+    font: 1.8rem "Roboto", sans-serif;
+    line-height: 2.3rem;
+    color: black;
+  }
+}
+@media (min-width: 901px) {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  .contenedorGridEventos .seccionEventos {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contenedorGridEventos .seccionEventos h3 {
+    font: 3rem "Roboto", sans-serif;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+  }
+  .contenedorGridEventos .seccionEventos p {
+    text-align: center;
+    font: 2.5rem "Roboto", sans-serif;
+    line-height: 4rem;
+  }
+  /*Contenedor de imagenes *keyframes* HTML EVENTOS*/
+  .seccionImagenEventos .carruselEventos {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .carruselEventos ul {
+    text-align: center;
+    padding: 0;
+    display: flex;
+    width: 400%;
+    animation: cambio 20s infinite;
+    justify-content: center;
+  }
+  .carruselEventos li {
+    width: 100%;
+    list-style: none;
+  }
+  .carruselEventos li:last-child img {
+    width: 45rem;
+  }
+  .carruselEventos li img {
+    width: 30rem;
+    border-radius: 2rem;
+  }
+  @keyframes cambio {
+    20% {
+      margin-left: 0;
+    }
+    40% {
+      margin-left: 0;
+    }
+    45% {
+      margin-left: -100%;
+    }
+    60% {
+      margin-left: -100%;
+    }
+    65% {
+      margin-left: -200%;
+    }
+    80% {
+      margin-left: -200%;
+    }
+    85% {
+      margin-left: -300%;
+    }
+    100% {
+      margin-left: -300%;
+    }
+  }
+  /*Contenedor (IMAGENES Y PARRAFOS) de las Cards del html EVENTOS*/
+  .gridCardEventos {
+    margin: 2rem 2rem;
+    border: 0.12 solid rgb(236, 8, 8);
+    border-radius: 0.8rem;
+    display: grid;
+    grid-template-areas: "imagen titulo" "imagen parrafo";
+    grid-gap: 2rem;
+  }
+  .gridCardEventos .imagenCardEventos {
+    grid-area: imagen;
+  }
+  .gridCardEventos .imagenCardEventos figure {
+    width: 20rem;
+    margin-top: 2rem;
+    padding: 1rem;
+  }
+  .gridCardEventos .imagenCardEventos figure img {
+    width: 100%;
+    border-radius: 0.8rem;
+    box-shadow: 0.2rem 0.4rem 0.4rem 0.5rem black;
+    transition: all 550ms;
+  }
+  .gridCardEventos .imagenCardEventos figure img:hover {
+    border: 0.1rem solid rgb(14, 14, 14);
+    box-shadow: 0.3rem 0.3rem 1rem 0.3rem rgba(56, 137, 212, 0.991);
+  }
+  .gridCardEventos .tituloCardEventos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: titulo;
+  }
+  .gridCardEventos .tituloCardEventos h2 {
+    font: 2.6rem "Roboto", sans-serif;
+    color: black;
+  }
+  .gridCardEventos .parrafoCardEventos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    grid-area: parrafo;
+  }
+  .gridCardEventos .parrafoCardEventos p {
+    text-align: center;
+    font: 2.2rem "Roboto", sans-serif;
+    line-height: 2.3rem;
+    color: black;
+  }
+}
+@media (min-width: 320px) and (max-width: 600px) {
+  .contenedorGridSede .seccionSede {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contenedorGridSede .seccionSede h2 {
+    font: 1.8rem "Roboto", sans-serif;
+    margin-bottom: 2.6rem;
+    text-transform: uppercase;
+  }
+  .contenedorGridSede .seccionSede p {
+    text-align: center;
+    font: 1.4rem "Roboto", sans-serif;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  .contenedorGridSede .mapaSede {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .contenedorGridSede .mapaSede iframe {
+    border-radius: 2rem;
+    border: 0.3rem solid black;
+    margin: 1rem 1.6rem 2rem 1.6rem;
+  }
+  .contenedorGridSede .datosSede ul {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+  }
+  .contenedorGridSede .datosSede ul li {
+    list-style: none;
+    margin-bottom: 2rem;
+    font: 1.4rem "Roboto", sans-serif;
+    text-transform: uppercase;
+  }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  .contenedorGridSede .seccionSede {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contenedorGridSede .seccionSede h2 {
+    font: 2.5rem "Roboto", sans-serif;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+  .contenedorGridSede .seccionSede p {
+    text-align: center;
+    font: 2rem "Roboto", sans-serif;
+    line-height: 3.3rem;
+  }
+  .contenedorGridSede .mapaSede {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .contenedorGridSede .mapaSede iframe {
+    border-radius: 2rem;
+    border: 0.3rem solid black;
+    margin: 1rem 1.6rem 2rem 1.6rem;
+  }
+  .contenedorGridSede .datosSede ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+  }
+  .contenedorGridSede .datosSede ul li {
+    list-style: none;
+    margin-bottom: 2rem;
+    font: 1.4rem "Roboto", sans-serif;
+    text-transform: uppercase;
+  }
+}
+@media (min-width: 901px) {
+  .contenedorGridSede .seccionSede {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contenedorGridSede .seccionSede h2 {
+    font: 3rem "Roboto", sans-serif;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+  }
+  .contenedorGridSede .seccionSede p {
+    text-align: center;
+    font: 2.5rem "Roboto", sans-serif;
+    line-height: 4rem;
+  }
+  .contenedorGridSede .mapaSede {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .contenedorGridSede .mapaSede iframe {
+    width: 50rem;
+    border-radius: 2rem;
+    border: 0.3rem solid black;
+    margin: 1rem 1.6rem 2rem 1.6rem;
+  }
+  .contenedorGridSede .datosSede ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+  }
+  .contenedorGridSede .datosSede ul li {
+    list-style: none;
+    margin-bottom: 2rem;
+    font: 1.8rem "Roboto", sans-serif;
+    text-transform: uppercase;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */

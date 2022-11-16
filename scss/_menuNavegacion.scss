@@ -1,0 +1,215 @@
+
+/* Comienza Media para NavBar en Celular*/
+// Comienza Media para NavBar en Celular 
+@media (min-width:320px) and (max-width:600px){
+
+*{box-sizing: border-box;
+     padding: 0; 
+     margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+.color{
+    background:$fondoNavCelular;
+}
+
+.nav-link {
+    @include navbar;
+    font-size: 1.4rem; 
+    color:rgb(7, 7, 7);}
+
+.nav-link:hover{
+    font-size: 1.2rem;
+    color: rgb(69, 69, 235);
+}
+
+}
+footer{
+    width: 100%;
+
+    nav{
+        ul{
+
+            display: flex;
+            align-items:center;
+            justify-content:space-evenly;
+    
+            li{
+                margin-right: 1rem;
+               list-style: none;
+
+                
+                a{
+                
+                    figure{
+                        text-align: center;
+                        
+                        img{
+
+                            width: 4.5rem;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Finaliza  Media para NavBar en Celular */
+// Finaliza  Media para NavBar en Celular 
+
+
+/* Comienza Media para NavBar en Tablet*/
+// Comienza Media para NavBar en Tablet
+
+@media (min-width:601px) and (max-width:900px){
+
+*{box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+    
+html{ 
+    font-size: 62.5%;
+}
+    
+/*Estilo propio NavBar*/
+    
+.navbar{
+background:$fondoNavCelular;
+    
+.nav-link {
+    @include navbar; 
+    font-size: 1.6rem;
+    color:rgb(7, 7, 7);}
+    
+.nav-link:hover{
+    font-size: 2rem;
+    color: rgb(84, 84, 246);
+    }
+}
+}
+
+footer{
+    width: 100%;
+
+    nav{
+        ul{
+
+            display: flex;
+            align-items:center;
+            justify-content:space-evenly;
+    
+            li{
+                
+               list-style: none;
+
+                
+                a{
+                
+                    figure{
+                        text-align: center;
+                        
+                        img{
+
+                            width: 5rem;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Finaliza  Media para NavBar en Tablet*/
+// Finaliza  Media para NavBar en Tablet
+
+@media (min-width:901px){
+
+
+    *{box-sizing: border-box;
+        margin: 0; 
+        padding: 0;
+    }
+        
+    html{ 
+        font-size: 62.5%;
+    }
+        
+    /*Estilo propio NavBar*/
+        
+    .navbar{
+    background:black;
+        
+    .nav-link {
+        @include navbar; 
+        margin-left: 6rem;
+        font-size: 2rem;
+        color:white;
+        transition: all 700ms;}
+        
+    .nav-link:hover{
+        font-size: 2.3rem;
+        color: rgb(54, 54, 176);
+        }
+    }
+
+    /* Tengo un inconveniente con el footer, porque le pongo un fondo de color pero me deja un margen-bottom en blanco y no se cual es el error*/
+    footer{
+        width: 100%;
+    
+        nav{
+            margin-top: 7rem;
+           
+            ul{
+    
+                display: flex;
+                align-items:center;
+                justify-content:space-evenly;
+        
+                li{
+                    
+                   list-style: none;
+    
+                    
+                    a{
+                    
+                        figure{
+                            text-align: center;
+                            
+                            img{
+    
+                                width: 6rem;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    }
+
+form{
+    margin: 6rem;
+    button{
+        width: 12rem;
+        margin-top: 3rem;
+        font-size: 1rem;
+        color: greenyellow;
+        font-family:$fuenteprincipal;
+        background-color: black;
+
+        &hover{
+
+            width:6rem;
+            color: white;
+
+        }
+    }
+}
+

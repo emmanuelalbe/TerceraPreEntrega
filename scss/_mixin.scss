@@ -1,0 +1,78 @@
+// NavBar  General
+@mixin navbar{
+    margin-top: 1.7rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    }
+
+@mixin tituloParrafo{
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    text-align:center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+//Titulo Celular
+@mixin titulosCelular{
+    font: 1.8rem 'Roboto', sans-serif;
+    margin-bottom: 2.6rem;
+    text-transform: uppercase;
+}
+//Parrafo Celular
+@mixin parrafosCelular{
+    text-align: center;
+    font: 1.4rem 'Roboto', sans-serif;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+@mixin flex {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+   
+}
+
+@mixin ulCarrusel{
+    text-align: center;
+    padding: 0;
+    display: flex;
+    width: 200%;
+    animation: cambio 15s infinite;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin liCarrusel{
+    
+    width: 100%;
+    list-style: none;
+}
+
+@mixin tituloTablet {
+    font: 2.5rem 'Roboto', sans-serif;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+
+}
+@mixin parrafoTablet{
+text-align: center;
+    font: 2rem 'Roboto', sans-serif;
+    line-height: 3.3rem;
+}
+
+@mixin tituloPc{
+    font: 3rem 'Roboto', sans-serif;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+
+}
+
+@mixin parrafoPc{
+    text-align: center;
+    font: 2.5rem 'Roboto', sans-serif;
+    line-height: 4rem;
+}

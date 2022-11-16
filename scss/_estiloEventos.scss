@@ -1,0 +1,388 @@
+@media (min-width:320px) and (max-width:600px){
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    
+    html {
+        font-size: 62.5%;
+    }
+
+    .contenedorGridEventos .seccionEventos{
+    @include tituloParrafo
+       
+    }
+    .contenedorGridEventos .seccionEventos h3{
+        @include titulosCelular
+    }
+    .contenedorGridEventos .seccionEventos p{
+        @include parrafosCelular
+    }
+    
+    /*Contenedor de imagenes *keyframes* HTML EVENTOS*/
+    
+    .seccionImagenEventos .carruselEventos{
+        width: 95%;
+        margin:auto;
+        overflow:hidden;
+    }
+    .carruselEventos ul {
+        text-align: center;
+        padding: 0;
+        display:flex;
+        width: 400%;
+        animation: cambiodos 20s infinite;
+        justify-content: center;
+    }
+    .carruselEventos li{ 
+        width: 100%;
+        list-style: none;
+    }
+    
+    .carruselEventos li:last-child img{
+        width: 30rem;
+    }
+    
+    .carruselEventos li img{ width:16rem; border-radius:2rem;}
+    
+    @keyframes cambiodos {
+        20% {margin-left: 0;}
+        40% {margin-left: 0;}
+    
+        45% {margin-left: -100%;}
+        60% {margin-left: -100%;}
+    
+        65% {margin-left: -200%;} 
+        80% {margin-left: -200%;}
+    
+        85% {margin-left: -300%;} 
+        100% {margin-left: -300%;}
+    }
+    
+    /*Contenedor (IMAGENES Y PARRAFOS) de las Cards del html EVENTOS*/
+    
+    .gridCardEventos{
+        margin:2rem 2rem;
+        border:0.12 solid rgb(236, 8, 8);
+        border-radius: 0.8rem;
+        display: grid;
+        grid-template-areas:"imagen titulo"
+                            "imagen parrafo"                 
+    }                   
+    
+    .gridCardEventos .imagenCardEventos{
+    grid-area:imagen;
+    }
+    
+    .gridCardEventos .imagenCardEventos figure{
+        width:12rem;
+        margin-top: 2rem;
+        padding:1rem; 
+    
+    }
+    
+    .gridCardEventos .imagenCardEventos figure img{
+        width: 100%;  
+        border-radius: 0.8rem;
+        box-shadow: 0.2rem  0.4rem 0.4rem 0.5rem black;
+        transition: $transicion;
+    }
+    
+
+    
+    .gridCardEventos .imagenCardEventos figure img:hover{
+    border: 0.1rem solid rgb(14, 14, 14);
+    box-shadow: 0.3rem 0.3rem 1rem 0.3rem rgba(56, 137, 212, 0.991);
+    }
+    
+    .gridCardEventos .tituloCardEventos{
+        display:flex ;
+        justify-content:center;
+        align-items: center;
+        grid-area: titulo; 
+    }
+    
+    .gridCardEventos .tituloCardEventos h2 {
+        font:1.2rem 'Roboto', sans-serif;
+        margin-top: 1rem;
+        color: black;    
+    }
+    
+    .gridCardEventos .parrafoCardEventos{
+        display:flex ;
+        justify-content: flex-start;
+        align-items: center;
+        grid-area: parrafo;
+        padding: 0.5rem;
+    }
+    
+    .gridCardEventos .parrafoCardEventos p{
+    text-align: center;
+    font: 1rem 'Roboto', sans-serif;
+    line-height: 1.8rem;
+    color: black;
+    
+    
+    }
+}
+
+
+@media (min-width:601px) and (max-width:900px){
+
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    
+    html {
+        font-size: 62.5%;
+    }
+
+    .contenedorGridEventos .seccionEventos{
+    @include tituloParrafo
+       
+    }
+    .contenedorGridEventos .seccionEventos h3{
+        @include tituloTablet
+    }
+    .contenedorGridEventos .seccionEventos p{
+        @include parrafoTablet
+    }
+    
+    /*Contenedor de imagenes *keyframes* HTML EVENTOS*/
+    
+    .seccionImagenEventos .carruselEventos{
+        width: 95%;
+        margin:auto;
+        overflow:hidden;
+    }
+    .carruselEventos ul {
+        text-align: center;
+        padding: 0;
+        display:flex;
+        width: 400%;
+        animation: cambio 20s infinite;
+        justify-content: center;
+    }
+    .carruselEventos li{ 
+        @include liCarrusel
+    }
+    
+    .carruselEventos li:last-child img{
+        width: 40rem;
+    }
+    
+    .carruselEventos li img{ width:30rem; border-radius:2rem;}
+    
+    @keyframes cambio {
+        20% {margin-left: 0;}
+        40% {margin-left: 0;}
+    
+        45% {margin-left: -100%;}
+        60% {margin-left: -100%;}
+    
+        65% {margin-left: -200%;} 
+        80% {margin-left: -200%;}
+    
+        85% {margin-left: -300%;} 
+        100% {margin-left: -300%;}
+    }
+    
+    /*Contenedor (IMAGENES Y PARRAFOS) de las Cards del html EVENTOS*/
+    
+    .gridCardEventos{
+        margin:2rem 2rem;
+        border:0.12 solid rgb(236, 8, 8);
+        border-radius: 0.8rem;
+        display: grid;
+        grid-template-areas:"imagen titulo"
+                            "imagen parrafo" ;
+                            grid-gap:2rem;
+                                 
+    }                   
+    
+    .gridCardEventos .imagenCardEventos{
+    grid-area:imagen;
+    }
+    
+    .gridCardEventos .imagenCardEventos figure{
+        width:20rem;
+        margin-top: 2rem;
+        padding:1rem; 
+    
+    }
+    
+    .gridCardEventos .imagenCardEventos figure img{
+        width: 100%;  
+        border-radius: 0.8rem;
+        box-shadow: 0.2rem  0.4rem 0.4rem 0.5rem black;
+        transition: $transicion;
+    }
+    
+
+    
+    .gridCardEventos .imagenCardEventos figure img:hover{
+    border: 0.1rem solid rgb(14, 14, 14);
+    box-shadow: 0.3rem 0.3rem 1rem 0.3rem rgba(56, 137, 212, 0.991);
+    }
+    
+    .gridCardEventos .tituloCardEventos{
+        @include flex;
+        grid-area: titulo; 
+    }
+    
+    .gridCardEventos .tituloCardEventos h2 {
+        font:2.3rem 'Roboto', sans-serif;
+       
+        color: black;    
+    }
+    
+    .gridCardEventos .parrafoCardEventos{
+        display:flex ;
+        justify-content: flex-start;
+        align-items: center;
+        grid-area: parrafo;
+    }
+    
+    .gridCardEventos .parrafoCardEventos p{
+    text-align: center;
+    font: 1.8rem 'Roboto', sans-serif;
+    line-height: 2.3rem;
+    color: black;
+    
+    
+    }
+
+
+}
+
+
+@media (min-width:901px){
+
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    
+    html {
+        font-size: 62.5%;
+    }
+
+    .contenedorGridEventos .seccionEventos{
+    @include tituloParrafo
+       
+    }
+    .contenedorGridEventos .seccionEventos h3{
+        @include tituloPc
+    }
+    .contenedorGridEventos .seccionEventos p{
+        @include parrafoPc;
+    }
+    
+    /*Contenedor de imagenes *keyframes* HTML EVENTOS*/
+    
+    .seccionImagenEventos .carruselEventos{
+        width: 95%;
+        margin:auto;
+        overflow:hidden;
+    }
+    .carruselEventos ul {
+        text-align: center;
+        padding: 0;
+        display:flex;
+        width: 400%;
+        animation: cambio 20s infinite;
+        justify-content: center;
+    }
+    .carruselEventos li{ 
+        @include liCarrusel
+    }
+    
+    .carruselEventos li:last-child img{
+        width: 45rem;
+    }
+    
+    .carruselEventos li img{ width:30rem; border-radius:2rem;}
+    
+    @keyframes cambio {
+        20% {margin-left: 0;}
+        40% {margin-left: 0;}
+    
+        45% {margin-left: -100%;}
+        60% {margin-left: -100%;}
+    
+        65% {margin-left: -200%;} 
+        80% {margin-left: -200%;}
+    
+        85% {margin-left: -300%;} 
+        100% {margin-left: -300%;}
+    }
+    
+    /*Contenedor (IMAGENES Y PARRAFOS) de las Cards del html EVENTOS*/
+    
+    .gridCardEventos{
+        margin:2rem 2rem;
+        border:0.12 solid rgb(236, 8, 8);
+        border-radius: 0.8rem;
+        display: grid;
+        grid-template-areas:"imagen titulo"
+                            "imagen parrafo" ;
+                            grid-gap:2rem;
+                                 
+    }                   
+    
+    .gridCardEventos .imagenCardEventos{
+    grid-area:imagen;
+    }
+    
+    .gridCardEventos .imagenCardEventos figure{
+        width:20rem;
+        margin-top: 2rem;
+        padding:1rem; 
+    
+    }
+    
+    .gridCardEventos .imagenCardEventos figure img{
+        width: 100%;  
+        border-radius: 0.8rem;
+        box-shadow: 0.2rem  0.4rem 0.4rem 0.5rem black;
+        transition: $transicion;
+    }
+    
+
+    
+    .gridCardEventos .imagenCardEventos figure img:hover{
+    border: 0.1rem solid rgb(14, 14, 14);
+    box-shadow: 0.3rem 0.3rem 1rem 0.3rem rgba(56, 137, 212, 0.991);
+    }
+    
+    .gridCardEventos .tituloCardEventos{
+        @include flex;
+        grid-area: titulo; 
+    }
+    
+    .gridCardEventos .tituloCardEventos h2 {
+        font:2.6rem 'Roboto', sans-serif;
+       
+        color: black;    
+    }
+    
+    .gridCardEventos .parrafoCardEventos{
+        display:flex ;
+        justify-content: flex-start;
+        align-items: center;
+        grid-area: parrafo;
+    }
+    
+    .gridCardEventos .parrafoCardEventos p{
+    text-align: center;
+    font: 2.2rem 'Roboto', sans-serif;
+    line-height: 2.3rem;
+    color: black;
+    }
+
+
+}

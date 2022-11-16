@@ -1,0 +1,119 @@
+@media (min-width:320px) and (max-width:600px){
+
+.contenedorGridSede .seccionSede{
+ @include tituloParrafo;
+    }
+    
+    .contenedorGridSede .seccionSede h2{
+        @include titulosCelular;
+       
+    }
+    .contenedorGridSede .seccionSede p{
+        @include parrafosCelular;
+        
+    }
+    
+    .contenedorGridSede .mapaSede{
+         @include flex;
+        margin-bottom: 2rem;
+    }
+    
+    .contenedorGridSede .mapaSede iframe{
+        border-radius: 2rem;
+        border: 0.3rem solid black;
+        margin: 1rem 1.6rem 2rem 1.6rem;
+    }
+
+    .contenedorGridSede .datosSede ul{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin:0;
+    }
+    .contenedorGridSede .datosSede ul li{
+        list-style: none;
+        margin-bottom: 2rem;
+        font: 1.4rem 'Roboto', sans-serif;
+        text-transform: uppercase;
+    }
+
+}
+@media (min-width:601px) and (max-width:900px){
+    .contenedorGridSede .seccionSede{
+        @include tituloParrafo;
+           }
+           
+           .contenedorGridSede .seccionSede h2{
+               @include tituloTablet;
+              
+           }
+           .contenedorGridSede .seccionSede p{
+               @include parrafoTablet;
+               
+           }
+           
+           .contenedorGridSede .mapaSede{
+                @include flex;
+               margin-bottom: 2rem;
+           }
+           
+           .contenedorGridSede .mapaSede iframe{
+               border-radius: 2rem;
+               border: 0.3rem solid black;
+               margin: 1rem 1.6rem 2rem 1.6rem;
+           }
+
+           
+.contenedorGridSede .datosSede ul{
+   @include flex;
+    flex-direction: column;
+    margin:0;
+}
+.contenedorGridSede .datosSede ul li{
+    list-style: none;
+    margin-bottom: 2rem;
+    font: 1.4rem 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+}
+
+@media (min-width:901px){
+    .contenedorGridSede .seccionSede{
+        @include tituloParrafo;
+           }
+           
+           .contenedorGridSede .seccionSede h2{
+               @include tituloPc;
+              
+           }
+           .contenedorGridSede .seccionSede p{
+               @include parrafoPc;
+               
+           }
+           
+           .contenedorGridSede .mapaSede{
+                @include flex;
+               margin-bottom: 2rem;
+           }
+           
+           .contenedorGridSede .mapaSede iframe{
+            width:50rem;
+               border-radius: 2rem;
+               border: 0.3rem solid black;
+               margin: 1rem 1.6rem 2rem 1.6rem;
+           }
+
+           
+.contenedorGridSede .datosSede ul{
+   @include flex;
+    flex-direction: column;
+    margin:0;
+}
+.contenedorGridSede .datosSede ul li{
+    list-style: none;
+    margin-bottom: 2rem;
+    font: 1.8rem 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+}
